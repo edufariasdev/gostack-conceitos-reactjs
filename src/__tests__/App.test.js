@@ -60,7 +60,6 @@ describe("App component", () => {
     fireEvent.click(getByText("Remover"));
 
     await actWait();
-
     expect(getByTestId("repository-list")).toBeEmpty();
   });
 });
